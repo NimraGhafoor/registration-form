@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: "Times New Roman", Times, serif;
       font-size: 18px;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
     }
-    fieldset {
-      border: 1px solid #888;
-      padding: 10px 20px;
+    form {
       max-width: 900px;
-    }
-    table {
-      width: 100%;
-      border-spacing: 10px 5px;
+      margin: auto;
+      background-color: white;
+      padding: 10px;
     }
     td {
       vertical-align: top;
     }
     input[type="text"],
+    input[type="email"],
     select {
-      height: 22px;
-      font-size: 14px;
       padding: 2px 4px;
-      font-family: Arial, sans-serif;
-      border: 2px inset;
+      font-size: 14px;
+      margin-top: 5px;
+      border: 2px inset #ccc;
+      box-sizing: border-box;
     }
     input[type="submit"],
     input[type="reset"] {
       margin: 3px 10px;
-      border-radius: 10px; 
+      font-size: 14px;
+      border-radius: 10px;
+      border: 1px solid #aaa;
       cursor: pointer;
     }
     input[type="submit"]:hover,
     input[type="reset"]:hover {
-      background-color: #e5e5e5;
+      background-color: #ddd;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      input,
+      select {
+        font-size: 14px;
+      }
+      legend {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
+
 <body>
   <form>
     <fieldset>
@@ -56,19 +74,34 @@
         <tr>
           <td>How long have you been using CiviCRM?</td>
           <td>
-            <input type="number" placeholder=" -select- ">
+            <select>
+              <option value="">- select -</option>
+              <option value="1">Less than 1 year</option>
+              <option value="2">1-2 years</option>
+              <option value="3">More than 2 years</option>
+            </select>
           </td>
         </tr>
         <tr>
           <td>Which CMS do you use?</td>
           <td>
-            <input type="number" placeholder=" -select- ">
+            <select>
+              <option value="">- select -</option>
+              <option value="wordpress">WordPress</option>
+              <option value="drupal">Drupal</option>
+              <option value="joomla">Joomla</option>
+            </select>
           </td>
         </tr>
         <tr>
           <td>Your skill set</td>
           <td>
-            <input type="number" placeholder=" -select- ">
+            <select>
+              <option value="">- select -</option>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JavaScript</option>
+              <option>React</option>
           </td>
         </tr>
         <tr>
@@ -102,16 +135,27 @@
         <tr>
           <td>Country (Home)</td>
           <td>
-            <input type="number" placeholder="United States">
+            <select>
+              <option value="us">United States</option>
+              <option value="pk">Pakistan</option>
+              <option value="in">India</option>
+            </select>
         </tr>
         <tr>
           <td></td>
-          <td>Your state/province and country of residence will be shared with others so folks can find others in their community.</td>
+          <td>Your state/province and country of residence will be shared with others so folks can find others in their
+            community.</td>
         </tr>
         <tr>
           <td>State (Home)</td>
           <td>
-            <input type="number" placeholder=" -select- ">
+            <select>
+              <option value="">- select -</option>
+              <option>California</option>
+              <option>Texas</option>
+              <option>Punjab</option>
+              <option>Sindh</option>
+            </select>
           </td>
         </tr>
       </table>
@@ -120,4 +164,5 @@
     <input type="reset" value="Cancel">
   </form>
 </body>
+
 </html>
