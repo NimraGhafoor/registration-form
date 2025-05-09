@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+    }
+    fieldset {
+      border: 1px solid #888;
+      padding: 10px 20px;
+      max-width: 900px;
+    }
+    table {
+      width: 100%;
+      border-spacing: 10px 5px;
+    }
+    td {
+      vertical-align: top;
+    }
+    input[type="text"],
+    select {
+      height: 22px;
+      font-size: 14px;
+      padding: 2px 4px;
+      font-family: Arial, sans-serif;
+      border: 2px inset;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      margin: 3px 10px;
+      border-radius: 10px; 
+      cursor: pointer;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Name and Address</legend>
+      <table>
+        <tr>
+          <td>Do you use CiviCRM?</td>
+          <td>
+            <input type="radio" name="use_civicrm" value="yes">Yes
+            <input type="radio" name="use_civicrm" value="no">No
+            (<a href="C:\Users\Hp\Documents\GitHub\SmashCodeInternship\task1.html">unselect</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>How long have you been using CiviCRM?</td>
+          <td>
+            <input type="number" placeholder=" -select- ">
+          </td>
+        </tr>
+        <tr>
+          <td>Which CMS do you use?</td>
+          <td>
+            <input type="number" placeholder=" -select- ">
+          </td>
+        </tr>
+        <tr>
+          <td>Your skill set</td>
+          <td>
+            <input type="number" placeholder=" -select- ">
+          </td>
+        </tr>
+        <tr>
+          <td>Email *</td>
+          <td><input type="text" name="email" required></td>
+        </tr>
+        <tr>
+          <td>First Name *</td>
+          <td><input type="text" name="fname" required></td>
+        </tr>
+        <tr>
+          <td>Last Name *</td>
+          <td><input type="text" name="lname" required></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>First and last name will be shared with other visitors to the site.</td>
+        </tr>
+        <tr>
+          <td>Street Address (Home)</td>
+          <td><input type="text" name="address" size="35px"></td>
+        </tr>
+        <tr>
+          <td>City (Home)</td>
+          <td><input type="text" name="city"></td>
+        </tr>
+        <tr>
+          <td>Postal Code (Home)</td>
+          <td><input type="text" name="postal" size="10px"></td>
+        </tr>
+        <tr>
+          <td>Country (Home)</td>
+          <td>
+            <input type="number" placeholder="United States">
+        </tr>
+        <tr>
+          <td></td>
+          <td>Your state/province and country of residence will be shared with others so folks can find others in their community.</td>
+        </tr>
+        <tr>
+          <td>State (Home)</td>
+          <td>
+            <input type="number" placeholder=" -select- ">
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <input type="submit" value="Save">
+    <input type="reset" value="Cancel">
+  </form>
+</body>
+</html>
